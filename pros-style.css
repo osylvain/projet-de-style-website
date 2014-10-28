@@ -20,10 +20,20 @@ h1, h2, h3 {
     font-weight: 100;
 }
 
+#services .container {
+    padding-bottom: 40px;
+}
+
 #services p {
     margin: 35px 0;
     font-size: 16px;
     height: 60px;
+}
+
+#section-slider h1 {
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 36px;
 }
 
 #portfolio {
@@ -48,6 +58,19 @@ h1, h2, h3 {
     color: #777 !important;
 }
 
+#suppliers .next-section, #services .next-section {
+    margin-bottom: 15px;
+    background-color: white;
+    background-image: url(images/next_section_black.png);
+}
+
+#suppliers .ask-for-tender h4, #services .ask-for-tender h4 {
+    clear: both;
+    margin: 0;
+    padding: 50px 0;
+    font-size: 30px;
+}
+
 #suppliers .container-fluid {
     padding: 20px 0;
 }
@@ -56,64 +79,100 @@ h1, h2, h3 {
     border: none;
 }
 
-#footer a {
+#contractors .split-half {
+    width: 50%;
+    float: left;
+}
+
+#contractors ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+#contractors ul li {
+    margin-bottom: 20px;
+}
+
+#contractors a {
+    font-size: 16px;
+}
+
+#footer {
+    padding-top: 0;
+}
+
+#footer .contact, #footer #tender {
+    padding-top: 100px;
+}
+
+#footer p, #footer a {
     color: #fff;
     font-size: 18px;
     font-weight: 100;
     letter-spacing: 1px;
-}
-
-#footer p {
-    color: #fff;
-    font-size: 20px;
-    font-weight: 300;
-    letter-spacing: 1px;
+    margin-bottom: 10px;
 }
 
 #footer a:hover {
     color: #aaa;
 }
 
-#facebook-container {
+#footer .contact {
+    text-align: left;
+}
+
+#footer .contact div {
+    margin: 40px 0;
+}
+
+#footer .realisations {
+    clear: both;
+    margin: 40px 0;
+}
+
+#footer .realisations h2 {
+    margin-bottom: 30px;
+}
+
+#footer #facebook {
+    background-color: #3b5998;
+    padding: 10px;
+    margin: 10px;
     position: relative;
     display: block;
     height: 30px;
-    width: 230px;
+    width: 300px;
     margin: auto;
-
 }
 
-#facebook-container span {
+#footer #facebook:hover {
+    color: white;
+}
+
+#footer #facebook span {
     position: absolute;
-    height: 30px;
-    width: 230px;
-    left: calc(50% - 115px);
+    width: 300px;
+    top: 14px;
+    left: calc(50% - 150px);
 }
 
-#facebook-container span:first-child {
-    background: #3b5998;
+#footer #facebook span:last-child {
+     opacity: 1;
+     transition: ease 0.3s;
+ }
+
+#footer #facebook:hover span:last-child {
     opacity: 0;
-    transition: ease 0.5s 0s;
 }
 
-#facebook-container span:first-child i {
-    line-height: 30px;
-}
-
-#facebook-container:hover span:first-child {
-    opacity: 1;
-    transition: ease 0.5s 0.3s;
-}
-
-#facebook-container span:last-child {
-    background: black;
-    opacity: 1;
-    transition: ease 0.5s 0.3s;
-}
-
-#facebook-container:hover span:last-child {
+#footer #facebook span:first-child {
     opacity: 0;
-    transition: ease 0.5s 0s;
+    transition: ease 0.3s;
+}
+
+#footer #facebook:hover span:first-child {
+    opacity: 1;
+    transition: ease 0.5s;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -135,6 +194,13 @@ h1, h2, h3 {
     #suppliers p {
         font-size: 26px;
         line-height: 70px;
+    }
+
+    #footer .contact {
+        text-align: center;
+    }
+    #tender {
+        display: none;
     }
 }
 
@@ -165,5 +231,41 @@ h1, h2, h3 {
     #suppliers .supplier:last-child {
         padding: 0 5%;
         width: 90%;
+    }
+
+    #contractors .container {
+        padding: 100px 0 60px 0;
+        width: 100%;
+    }
+
+    #contractors .split-half {
+        float: none;
+        width: 100%;
+    }
+
+    #contractors a {
+        font-size: 18px;
+    }
+
+    #section-slider .caption-content {
+        text-align: center;
+    }
+
+    #section-slider h1 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    #home .home-image img {
+        width: 50%;
+    }
+
+    #home .home-image .word {
+        width: 100%;
+        display:block;
+    }
+
+    #home .home-image .separator {
+        display: none;
     }
 }

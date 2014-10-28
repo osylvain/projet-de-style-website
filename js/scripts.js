@@ -159,7 +159,7 @@ $(window).load(function(){
 			slider.slides.eq(slider.animatingTo).delay(500);
 		},
 		after: function(slider) {
-			$('.clapat-caption').fadeIn().animate({top:'0'},{queue:false, easing: 'easeOutQuad', duration: 500});			
+			$('.clapat-caption').fadeIn().animate({top:'0'},{queue:false, easing: 'easeOutQuad', duration: 500});
 		},
 		useCSS: true			
 	});
@@ -169,16 +169,18 @@ $(window).load(function(){
 	$('.clapat_slider_section').flexslider({
 		animation: "fade",
 		animationSpeed: 1000,
+        slideshowSpeed: 4000,
 		controlNav: true,
 		controlsContainer: '.fullscreen-slider-controls',
-		directionNav: false,	
+		directionNav: false,
+        touch: true,
 		before: function(slider) {
 			$('.clapat-caption-section').fadeOut().animate({top:'-80px'},{queue:false, easing: 'easeOutQuad', duration: 500});
 			slider.slides.eq(slider.currentSlide).delay(500);
 			slider.slides.eq(slider.animatingTo).delay(500);
 		},
 		after: function(slider) {
-			$('.clapat-caption-section').fadeIn().animate({top:'0'},{queue:false, easing: 'easeOutQuad', duration: 500});			
+			$('.clapat-caption-section').fadeIn().animate({top:'0'},{queue:false, easing: 'easeOutQuad', duration: 500});
 		},
 		useCSS: true			
 	});
