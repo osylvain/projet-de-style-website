@@ -478,12 +478,12 @@ Primary use:	Showcase Portfolio
 	}	
 
 	.one_third {
-		width: 30%;
+		width: 30.6%;
 	}	
 
 	.one_fourth {
-		width: 21%;
-	}	
+		width: 22%;
+	}
 
 	.one_fifth {
 		width: 16.8%;
@@ -523,7 +523,8 @@ Primary use:	Showcase Portfolio
 
 	.one_half, .one_third, .two_third, .three_fourth, .one_fourth, .two_fourth, .one_fifth, .two_fifth, .three_fifth, .four_fifth, .one_sixth, .five_sixth {
 		float: left;
-		margin: 0 2% 20px 2%;
+		margin-bottom: 20px;
+        margin-right: 4%;
 		position: relative;
 	}	
 
@@ -563,7 +564,7 @@ Primary use:	Showcase Portfolio
 	}
 	
 	#loader {
-		background:url(images/project-loader.gif) center center no-repeat;
+		/*background:url(images/project-loader.gif) center center no-repeat;*/
 		height: 2px;
 		width: 140px;
 		left: 50%;
@@ -2722,7 +2723,7 @@ Primary use:	Showcase Portfolio
 		left:50%;
 		margin-left:-70px;
 		margin-top:50px;
-		background-image:url(images/project-loader.gif);
+		/*background-image:url(images/project-loader.gif);*/
 		background-size:140px 3px;
 		position:absolute;
 	}
@@ -3344,7 +3345,7 @@ Primary use:	Showcase Portfolio
 
 
 
-@media only screen and (max-width: cpx) {
+@media only screen and (max-width: 479px) {
 	
 	.container {
 		width:280px;
