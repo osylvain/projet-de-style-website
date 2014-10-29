@@ -2514,10 +2514,10 @@ Primary use:	Showcase Portfolio
 		color:rgba(0,0,0,0.2);
 	}
 	
-	#filters ul li:last-child a:after {
-		content:"";
-		padding-left:0px;
-	}
+	/*#filters ul li:last-child a:after {*/
+		/*content:"";*/
+		/*padding-left:0px;*/
+	/*}*/
 	
 	#filters ul li a:hover , #filters ul li a.active  {
 		color: #000;

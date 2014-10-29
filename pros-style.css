@@ -40,6 +40,21 @@ h1, h2, h3 {
     border-bottom: none;
 }
 
+#portfolio .portfolio .project-categories {
+    margin: 15px 0 5px 0;
+    color: white;
+    font-size: 16px;
+}
+
+#portfolio .portfolio .project-name {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+#portfolio .portfolio-item:hover .project-overlay {
+    opacity: 0.8;
+}
+
 #suppliers {
     margin-top: -40px;
     padding-bottom: 40px;
@@ -174,6 +189,33 @@ h1, h2, h3 {
     opacity: 1;
     transition: ease 0.5s;
 }
+
+#filters ul li {
+    margin: 0 25px;
+}
+
+#filters ul li a {
+    position: relative;
+    font-size: 18px;
+}
+
+#filters ul li a::after {
+    content: "...";
+    letter-spacing: 4px;
+    font-size: 16px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    padding: 0;
+    color: transparent;
+}
+
+#filters ul li a.active::after {
+    color: #000;
+}
+
+
 
 @media only screen and (min-width: 1024px) {
     #suppliers .supplier:first-child {
