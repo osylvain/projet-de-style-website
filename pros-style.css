@@ -268,4 +268,8 @@ h1, h2, h3 {
     #home .home-image .separator {
         display: none;
     }
+
+    body {
+        font-weight: 300;
+    }
 }
