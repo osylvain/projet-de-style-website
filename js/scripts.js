@@ -377,7 +377,7 @@ $(window).load(function(){
 		infowindow.open(map,companyMarker);
 	});	
 	}
-	
+
 	return false;
 
 });//End Window Load
@@ -386,8 +386,7 @@ $(window).load(function(){
 
  
 $(document).ready(function($){
-	
-	
+
 	//CountDown
 	if( jQuery('#countdown_dashboard').length > 0 ){	
 	$('#countdown_dashboard').countDown({
@@ -567,7 +566,30 @@ $(document).ready(function($){
                 "margin-left": "0"
             }, 500);
         }
-    });		
+    });
+
+    $('#sendFormButton').click(function() {
+        console.log('u');
+
+        var link = 'mailto:projetdestyle@gmail.com?';
+        link += 'subject=' + encodeURI('Demande de service en ligne');
+        link += '&body=';
+        link += encodeURI('Bonjour,');
+        link += encodeURI('\n\r\n\r');
+        link += encodeURI("Je voudrais effectuer une demande de service. Voici mes informations:");
+        link += encodeURI('\n\r\n\r');
+        link += 'Nom: ' + encodeURI($('#footer form input[name="name"]').val()) + encodeURI('\n\r');
+        link += 'Adresse: ' + encodeURI($('#footer form input[name="adress"]').val()) + encodeURI('\n\r');
+        link += 'Produits désirés: ' + encodeURI($('#footer form input[name="product"]').val()) + encodeURI('\n\r');
+        link += 'Nombre de fenêtres: ' + encodeURI($('#footer form input[name="number"]').val()) + encodeURI('\n\r');
+        link += 'Notes: ' + encodeURI($('#footer form textarea').val()) + encodeURI('\n\r');
+        link += encodeURI('\n\r');
+        link += 'Bonne journée!';
+        link += encodeURI('\n\r\n\r');
+        link += 'Envoyé via projetdestyle.ca';
+
+        window.open(link, "_blank");
+    });
 
 		
 });

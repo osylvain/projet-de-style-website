@@ -94,6 +94,10 @@ h1, h2, h3 {
     border: none;
 }
 
+#contractors {
+    border: none;
+}
+
 #contractors .split-half {
     width: 50%;
     float: left;
@@ -105,11 +109,12 @@ h1, h2, h3 {
 }
 
 #contractors ul li {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 #contractors a {
     font-size: 16px;
+    color: white;
 }
 
 #footer {
@@ -190,6 +195,41 @@ h1, h2, h3 {
     transition: ease 0.5s;
 }
 
+#footer input[type=text], #footer textarea {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 2px;
+    width: 80%;
+    outline: 0;
+}
+
+#footer textarea {
+    height: 100px;
+}
+
+#footer input[type=text]:focus {
+    background-color: transparent;
+}
+
+#footer button {
+    color: #fff;
+    height: 40px;
+    background: transparent;
+    margin-bottom: 20px;
+    transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    box-sizing: border-box;
+    border: 1px solid white;
+    border-radius: 2px;
+    width: 80%;
+    outline: 0;
+}
+#footer button:hover {
+    background: rgba(255,255,255,0.2);
+}
+
 #filters ul li {
     margin: 0 25px;
 }
@@ -241,9 +281,6 @@ h1, h2, h3 {
     #footer .contact {
         text-align: center;
     }
-    #tender {
-        display: none;
-    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -260,19 +297,13 @@ h1, h2, h3 {
 }
 
 @media only screen and (max-width: 479px) {
+    #suppliers .supplier:nth-child(7) {
+        padding-left: 30%;
+    }
+
     #suppliers .supplier {
         width: 40%;
         height: 50px;
-    }
-
-    #suppliers p {
-        font-size: 26px;
-        line-height: 75px;
-    }
-
-    #suppliers .supplier:last-child {
-        padding: 0 5%;
-        width: 90%;
     }
 
     #contractors .container {
@@ -287,6 +318,18 @@ h1, h2, h3 {
 
     #contractors a {
         font-size: 18px;
+    }
+
+    #contractors .section-title {
+        padding-bottom: 40px;
+    }
+
+    #contractors.home-image {
+        height:auto;
+    }
+
+    #contractors ul li {
+        margin-bottom: 20px;
     }
 
     #section-slider .caption-content {
@@ -309,6 +352,10 @@ h1, h2, h3 {
 
     #home .home-image .separator {
         display: none;
+    }
+
+    #footer #tender {
+         margin-top: -100px;
     }
 
     body p, body a, body h1, body h2, body h3, body h4, body span {
