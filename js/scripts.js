@@ -569,8 +569,6 @@ $(document).ready(function($){
     });
 
     $('#sendFormButton').click(function() {
-        console.log('u');
-
         var link = 'mailto:projetdestyle@gmail.com?';
         link += 'subject=' + encodeURI('Demande de service en ligne');
         link += '&body=';
@@ -588,7 +586,7 @@ $(document).ready(function($){
         link += encodeURI('\n\r\n\r');
         link += 'Envoyé via projetdestyle.ca';
 
-        window.open(link, "_blank");
+        window.open(link);
     });
 
 		
