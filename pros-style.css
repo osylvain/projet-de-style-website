@@ -64,7 +64,7 @@ h1, h2, h3 {
     padding: 25px 2%;
     float: left;
     height: 50px;
-    width: 10%;
+    width: 15%;
 }
 
 #suppliers p {
@@ -294,27 +294,30 @@ h1, h2, h3 {
     }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
+    #suppliers .supplier {
+        width: 23%;
+        height: 50px;
+    }
+
+    #suppliers .supplier:nth-child(4) {
+        padding-left: 25%;
+    }
+    
     #suppliers p {
         font-size: 22px;
         line-height: 45px;
     }
 }
 
-@media only screen and (max-width: 1024px) and (min-width: 480px){
-    #suppliers .supplier:nth-child(5) {
-        padding-left: 17.5%;
-    }
-}
-
 @media only screen and (max-width: 479px) {
-    #suppliers .supplier:nth-child(7) {
-        padding-left: 30%;
-    }
-
     #suppliers .supplier {
         width: 40%;
         height: 50px;
+    }
+
+    #suppliers .supplier:nth-child(5) {
+        padding-left: 30%;
     }
 
     #contractors .container {
